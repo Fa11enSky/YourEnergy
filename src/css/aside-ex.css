@@ -1,0 +1,167 @@
+.day-qoute {
+}
+@media screen and (min-width: 768px) {
+  .day-qoute {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+}
+
+.day-description {
+  width: 335px;
+  border-radius: 20px;
+  background-color: #242424;
+  padding: 20px 20px 20px 72px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .day-description {
+    width: 400px;
+    padding: 40px 40px 40px 90px;
+  }
+}
+
+.day-title {
+  color: #f4f4f4;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 768px) {
+  .day-title {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+.day-title::before {
+  content: '';
+  background-image: url('../img/svg/run_man.svg');
+  background-size: cover;
+  width: 34px;
+  height: 32px;
+  position: absolute;
+  left: -52px;
+}
+.day-title::after {
+  content: '';
+  background-image: url(../img/svg/inverted_commas.svg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 223px;
+}
+@media screen and (min-width: 768px) {
+  .day-title::after {
+    background-image: url('../img/svg/inverted_commas_tab.svg');
+    width: 24px;
+    height: 24px;
+    left: 217px;
+  }
+}
+.day-text {
+  color: rgba(244, 244, 244, 0.6);
+
+  margin-bottom: 16px;
+  line-height: 1.28;
+}
+@media screen and (min-width: 768px) {
+  .day-text {
+    margin-bottom: 18px;
+  }
+}
+.day-author {
+  color: #f4f4f4;
+  line-height: 1.28;
+  /* 128.571% */
+}
+@media screen and (min-width: 768px) {
+  .day-author {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.thumb {
+  width: 335px;
+  height: 242px;
+  background-color: #7e4d4d;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* background: #FFF; */
+}
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 288px;
+    height: 249px;
+  }
+}
+.day-image {
+}
+
+.day-daily-norm {
+  width: 335px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 20px 20px 70px;
+}
+@media screen and (min-width: 768px) {
+  .day-daily-norm {
+    width: 400px;
+    padding: 40px 40px 40px 90px;
+    margin-right: 304px;
+  }
+}
+.daily-norm-time {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+    .daily-norm-time{
+        font-size: 24px;
+         line-height: 1.33;
+    }
+}
+.daily-norm-time::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  background-image: url('../img/svg/daily-icon.svg');
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 768px) {
+  .daily-norm-time {
+    margin-bottom: 6px;
+  }
+}
+.daily-norm-desc {
+  display: block;
+  color: rgba(36, 36, 36, 0.6);
+  margin-bottom: 16px;
+}
+
+.daily-norm-text {
+    width: 245px;
+  color: #242424;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.28;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+.daily-norm-text{
+    width: 270px;
+}
+}

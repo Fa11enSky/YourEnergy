@@ -10,17 +10,33 @@
 @import url('./container.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
+  font-size: 14px;
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url(../fonts/NeueMontreal-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url(../fonts/NeueMontreal-Italic.otf);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url(../fonts/NeueMontreal-Medium.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+*{box-sizing: border-box;}
+body{
+  background-color:#F4F4F4;;
 }
