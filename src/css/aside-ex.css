@@ -1,11 +1,21 @@
 .day-qoute {
+  max-width: 335px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .day-qoute {
+    max-width: 704px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: center;
+    row-gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .day-qoute{
+    display: block;
+    max-width: 444px;
+
   }
 }
 
@@ -20,9 +30,15 @@
   .day-description {
     width: 400px;
     padding: 40px 40px 40px 90px;
+      margin-bottom: 0;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .day-description{
+    width: 444px;
+    margin-bottom: 32px;
+  }
+}
 .day-title {
   color: #f4f4f4;
   position: relative;
@@ -37,6 +53,7 @@
     line-height: 1.33;
   }
 }
+
 .day-title::before {
   content: '';
   background-image: url('../img/svg/run_man.svg');
@@ -91,14 +108,29 @@
   background-color: #7e4d4d;
   border-radius: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
   /* background: #FFF; */
+}
+.thumb img{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .thumb {
     width: 288px;
     height: 249px;
+   margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .thumb{
+    width: 444px;
+    height: 242px;
+    margin-bottom: 32px;
+  }
+}
+
 .day-image {
 }
 
@@ -114,6 +146,13 @@
     padding: 40px 40px 40px 90px;
     margin-right: 304px;
   }
+}
+@media screen and (min-width: 1440px) {
+.day-daily-norm{
+    margin-right: 0;
+    width: 444px;
+    height: 315px;
+}
 }
 .daily-norm-time {
   font-size: 20px;
@@ -165,3 +204,8 @@
     width: 270px;
 }
 }
+@media screen and (min-width: 1440px) {
+.daily-norm-text{
+  width: 314px;
+    -webkit-line-clamp: 9;
+}}

@@ -16,6 +16,9 @@
   font-style: normal;
   font-weight: 400;
 }
+body{
+  margin: 0;;
+}
 @font-face {
   font-family: 'PP Neue Montreal';
   src: url(../fonts/NeueMontreal-Regular.otf);

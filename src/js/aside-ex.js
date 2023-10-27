@@ -2,6 +2,7 @@ import { getQuoteDay } from './api-requests/quote-day';
 const quoteDay = document.querySelector('.day-text');
 const quoteAuthor = document.querySelector('.day-author');
 
+const currentDate = new Date().toDateString();
 
 
 
@@ -14,8 +15,7 @@ function updateQuote() {
   });
 }
 function addToLocalStorage(data) {
-    const currentDate = new Date();
-    const quoteDate = currentDate.getDate()
+  const quoteDate = new Date().toDateString();
   const quoteObj = {
     date: quoteDate,
     quoteDay: data.quote,
@@ -29,13 +29,16 @@ function checkStorage() {
     if (!localStorage.getItem('quoteOfDay')) {
         updateQuote();
         return
-    } 
-    const currentDate = new Date();
-    const quoteDate = JSON.parse(localStorage.getItem('quoteOfDay')).date;
-    if (currentDate === quoteDate) {
+  } 
+  
+    const quote = JSON.parse(localStorage.getItem('quoteOfDay'));
+    if (currentDate === quote.date) {
+      updateQuoteFromLocalStorage(quote);
         console.log('djafljaldhfkla')
     }
-    console.log(quoteDate)
 }
-updateQuote()
-checkStorage()
+function updateQuoteFromLocalStorage(data) {
+     quoteDay.textContent = data.quoteDay;
+    quoteAuthor.textContent = data.author;
+}
+ checkStorage()
