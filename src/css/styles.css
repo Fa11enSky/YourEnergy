@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 500;
 }
-*{box-sizing: border-box;}
+*,::before,::after{box-sizing: border-box;}
 body{
-  background-color:#F4F4F4;;
+  background-color:#F4F4F4;
 }
