@@ -5,7 +5,6 @@ const quoteAuthor = document.querySelector('.day-author');
 const currentDate = new Date().toDateString();
 
 
-
 function updateQuote() {
   getQuoteDay().then(data => {
     quoteDay.textContent = data.quote;
@@ -35,6 +34,8 @@ function checkStorage() {
     if (currentDate === quote.date) {
       updateQuoteFromLocalStorage(quote);
         console.log('djafljaldhfkla')
+    } else {
+      updateQuote()
     }
 }
 function updateQuoteFromLocalStorage(data) {
